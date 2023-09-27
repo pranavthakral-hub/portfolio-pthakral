@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav's portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fbfdffabc7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class = "container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Pranav</span><br> Thakral from India</h1>
+        </div>
+    </div>
+</div>
+<!--about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>A dynamic and detail-oriented Computer Science graduate with a strong foundation in multiple programming languages and a knack for data-driven analysis. I bring proficiency in AWS services, a passion for problem-solving, and a commitment to fostering diversity and inclusion within software development teams. In addition to my strong technical foundation, I have honed my problem-solving skills through challenging projects and coursework during my academic journey. I thrive in collaborative environments, where I can contribute my technical expertise.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience </p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Agile Software Development:</span><br>Proficiency in the Agile methodology, encompassing requirements gathering, planning, design, coding, testing, and continuous monitoring.</li>
+                        <li><span>Programming Languages:</span><br>Hands-on experience in multiple languages, including Java, C++, Python, TypeScript, R, HTML, and CSS.</li>
+                        <li><span>Development & Testing Frameworks:</span><br>Spring framework, Springboot, JPA & Hibernate, JUnit, Mockito</li>
+                        <li><span>CI/CD Development:</span><br>Expertise in Continuous Integration and Continuous Deployment (CI/CD) processes to automate software builds, testing, and deployment for streamlined development pipelines.</li>
+                        <li><span>Computer Fundamentals:</span><br>Knowledge of fundamental computer concepts, including networks, operating systems, and computer architecture.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Software development engineering intern at Amazon (<i>Jan'23 - June'23</i>)</span><br>I have had the privilege of working across the entire software development lifecycle, from the initial stages of requirements gathering to design, implementation, rigorous testing, and final deployment. My experience extends to collaborating within an Agile development team of 10 members, where I actively participated in 2-3 daily scrum meetings over the course of a 6-month project, enabling us to closely monitor and enhance our progress. One standout project in my portfolio was my collaboration with the Filings team of VAT International Services at Amazon, where I played a key role in implementing the Annuals Automation project. As part of this initiative, I successfully developed and deployed an automated process for filing annual returns for sellers, leading to a significant reduction in manual workload and freeing up the software development engineers' (SDEs) bandwidth by 10%. Additionally, I ramped up on AWS technologies during this project, further expanding my skill set to align with the ever-evolving demands of cloud-based software solutions.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2023</span><br>Bachelors in Technology, Computer Science from Manipal University, Grade : 8.4 </li>
+                        <li><span>2017-2019</span><br>High School, Major - Science from Bal Bharati Dwarka, CBSE class XII score : 95.6% </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--services-->
+
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>AWS Cloud Solutions</h2>
+                <p>Specialisation in AWS to provide seamless cloud solutions, including migration, infrastructure as code, and optimizing cloud resources for businesses.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen"></i>
+                <h2>Software Design</h2>
+                <p>Making High-Level Designs and Low-Level Designs that serve as the blueprints for robust software systems, ensuring efficient development and long-term maintainability.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Spring Web Applications</h2>
+                <p>Designing web applications using the Spring framework, creating reliable and scalable solutions for diverse online platforms.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------contact--------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                 <p><i class="fa-solid fa-paper-plane"></i>pranavthakral22@gmail.com</p>
+                 <p><i class="fa-solid fa-phone"></i>9873891245</p>
+                 <div class="social-icons">
+                     <a href="https://www.linkedin.com/in/pranav-thakral-a529a6142/"><i class="fa-brands fa-linkedin"></i></a>
+                     <a href="https://github.com/pranavthakral-hub"><i class="fa-brands fa-github"></i></a>
+                     <a href="https://www.instagram.com/pranav_thakral/"><i class="fa-brands fa-instagram"></i>`</a>
+                 </div>
+                <a href="images/pthakral_SDE1.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Pranav <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+    for(tablink of tablinks) {
+    tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+    sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+    sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyl1gRpExfjBV-DKn1UAZO8_3v0YNopAyjis6wNj0F3249vbvDAZPh-WxAJ4wqnXfo6/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+      msg.innerHTML = "Message Sent Successfully!"
+      setTimeout(function(){
+      msg.innerHTML = "";
+      },5000)
+      form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
